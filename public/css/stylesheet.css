@@ -6,8 +6,7 @@ body {
 
 .sidebar {
   float: left;
-  background-color: rgba(255,255,255,0.8);
-  box-shadow: 0 15px 0 0 white;
+  /* background-color: rgba(255,255,255,0.8); */
 }
 
 .quarters {
@@ -15,10 +14,11 @@ body {
 }
 
 .quarters img {
+    background-color: rgba(255,255,255,0.8);
     max-height: 100%;
     max-width: 100%;
     transition: 1.5s ease;
-    -webkit-filter: blur(4px);
+    -webkit-filter: blur(1px)
 }
 .quarters img:hover {
   -webkit-filter: blur(0px)
