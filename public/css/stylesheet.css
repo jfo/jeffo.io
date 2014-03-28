@@ -1,20 +1,32 @@
 body {
   margin: 0 0 0 0;
   padding: 0 0 0 0;
+  font-family: "garamond-premier-pro";
 }
 
 .sidebar {
   float: left;
   background-color: rgba(255,255,255,0.5);
+  /* background: linear-gradient(red,orange); */
   width: 15%;
   text-align: center;
 }
 
-.name {
-  height: 10%;
-  padding: 0 0 0 0;
-  margin: 0 0 0 0;
+.v-cent {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
+
+.name {
+  height: 15%;
+  -webkit-filter: blur(2px);
+  font-size: 30px;
+  transition: 1.5s ease;
+  color: rgb(68, 68, 68);
+}
+.name:hover { -webkit-filter: blur(0px) }
+
 .quarters {
   height: 20%;
 }
@@ -22,16 +34,13 @@ body {
 .quarters img {
     max-height: 100%;
     max-width: 100%;
-    -webkit-filter: blur(1px);
+    -webkit-filter: blur(2px);
     transition: 1.5s ease;
 }
-
-.quarters img:hover {
-  -webkit-filter: blur(0px)
-}
+.quarters img:hover { -webkit-filter: blur(0px) }
 
 #background {
-  background-image: url(./images/72.jpg);
+  /* background-image: /images/72.jpg; */
   position: absolute;
   top: 0;
   left: 0;
@@ -43,5 +52,3 @@ body {
   z-index: -1;
 }
 
-.text {
-}
